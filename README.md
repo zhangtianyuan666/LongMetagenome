@@ -259,13 +259,291 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
       <td>Searching sequence databases for sequence homologs by hidden Markov models</td>
       <td>http://hmmer.org/</td>
     </tr>
-	
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
+	<td>BLAST+</td>
+      <td>Basic Local Alignment Search Tool finds regions of similarity between biological sequences</td>
+      <td>https://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+    </tr>
+    <tr>
+      <td>eggNOG-mapper</td>
+      <td>Functional annotation of novel sequences from the eggNOG database</td>
+      <td>http://eggnog-mapper.embl.de/</td>
+    </tr>
+    <tr>
+      <td>antiSMASH</td>
+      <td>Search a genome sequence for secondary metabolite biosynthetic gene clusters (BGCs)</td>
+      <td>https://antismash.secondarymetabolites.org/</td>
+    </tr>
+    <tr>
+      <td>BiG-SCAPE</td>
+      <td>Constructs sequence similarity networks of BGCs and groups them into cluster families</td>
+      <td>https://bigscape-corason.secondarymetabolites.org/</td>
+    </tr>
+    <tr>
+      <td>PlasFlow</td>
+      <td>Prediction of plasmid sequences in metagenomic contigs</td>
+      <td>https://github.com/smaegol/PlasFlow</td>
+    </tr>
+    <tr>
+      <td>PhiSpy</td>
+      <td>Finding prophages in bacterial genomes that combines similarity-and composition-based strategies</td>
+      <td>https://github.com/linsalrob/PhiSpy</td>
+    </tr>
+    <tr>
+      <td>Salmon</td>
+      <td>Highly-accurate, transcript-level quantification tools suitable for metagenome</td>
+      <td>https://github.com/COMBINE-lab/salmon</td>
+    </tr>
+    <tr>
+      <td>Cd-hit</td>
+      <td>Clusters and compares protein or nucleotide sequences</td>
+      <td>https://github.com/weizhongli/cdhit</td>
   </tr>
 </table>
 	
 
+## Table 2
+Table 2. The application of databases in long-read metagenomic studies
 
+<table>
+  <tr>
+    <th>Database</th>
+    <th>Description</th>
+    <th>Tools</th>
+    <th>Website</th>
+  </tr>
+  <tr>
+    <td colspan="4">Functional annotation / reference databases</td>
+  </tr>
+  <tr>
+    <td>Nr</td>
+    <td>NCBI non-redundant database</td>
+    <td>BLAST+</td>
+    <td>https://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/</td>
+  </tr>
+  <tr>
+    <td>Uniprot</td>
+    <td>Database of protein sequence and functional information for all species</td>
+    <td>BLAST+</td>
+    <td>https://www.uniprot.org/</td>
+  </tr>
+  <tr>
+    <td>GO</td>
+    <td>The Gene Ontology focuses on the function of the genes and gene products</td>
+    <td>BLAST+, BLAST2GO</td>
+    <td>https://www.geneontology.org/</td>
+  </tr>
+  <tr>
+    <td>KEGG</td>
+    <td>Kyoto Encyclopedia of Genes and Genomes</td>
+    <td>Kofamscan, BLAST+, KOBAS</td>
+    <td>https://www.genome.jp/kegg/</td>
+  </tr>
+  <tr>
+    <td>Nt</td>
+    <td>NCBI nucleotide database</td>
+    <td>BLAST+</td>
+    <td>https://www.ncbi.nlm.nih.gov/nucleotide/</td>
+  </tr>
+<td>RefSeq</td>
+    <td>NCBI reference sequence database</td>
+    <td>BLAST+</td>
+    <td>https://www.ncbi.nlm.nih.gov/refseq/</td>
+  </tr>
+  <tr>
+    <td>EggNOG</td>
+    <td>Ortholog linkages, functional annotations, and gene evolutionary</td>
+    <td>EggNOG-mapper</td>
+    <td>http://eggnog5.embl.de/</td>
+  </tr>
+  <tr>
+    <td>Rfam</td>
+    <td>RNA families database</td>
+    <td>HMMER</td>
+    <td>https://rfam.org/</td>
+  </tr>
+  <tr>
+    <td>Tigrfam</td>
+    <td>Inferring protein families and domains based on Hidden Markov Models (HMMs)</td>
+    <td>HMMER</td>
+    <td>https://www.tigr.org/TIGRFAMs</td>
+  </tr>
+  <tr>
+    <td>MBGD</td>
+    <td>Microbial genome database for comparative analysis</td>
+    <td>BLAST+</td>
+    <td>https://mbgd.nibb.ac.jp/</td>
+  </tr>
+  <tr>
+    <td colspan="4">Resistance and mobile genetic elements database</td>
+  </tr>
+  <tr>
+    <td>mobileOG-db</td>
+    <td>Bacterial mobile genetic elements</td>
+    <td>BLAST+</td>
+    <td>https://github.com/clb21565/mobileOG-db</td>
+  </tr>
+  <tr>
+    <td>SARG 2.0</td>
+    <td>Antibiotic resistance genes database</td>
+    <td>ARGpore2, BLAST+, LAST</td>
+    <td>http://smile.hku.hk/SARGs</td>
+  </tr>
+  <tr>
+    <td>CARD</td>
+    <td>The comprehensive antibiotic resistance database</td>
+    <td>RGI, BLAST+</td>
+    <td>https://card.mcmaster.ca/</td>
+  </tr>
+  <tr>
+    <td>PHI</td>
+    <td>Pathogen-host interactions</td>
+    <td>BLAST+</td>
+    <td>http://www.phi-base.org/</td>
+  </tr>
+  <td>VFDB</td>
+    <td>Virulence factor database</td>
+    <td>BLAST+</td>
+    <td>http://www.mgc.ac.cn/VFs/</td>
+  </tr>
+  <tr>
+    <td>BacMet</td>
+    <td>Antibacterial biocide & metal resistance genes</td>
+    <td>BLAST+</td>
+    <td>http://bacmet.biomedicine.gu.se/</td>
+  </tr>
+  <tr>
+    <td>MEGARes 3.0</td>
+    <td>Resistance gene sequences for antimicrobial drugs, biocides, and metals</td>
+    <td>BLAST+</td>
+    <td>https://www.meglab.org/</td>
+  </tr>
+  <tr>
+    <td>ISFinder</td>
+    <td>Insertion sequences (IS) isolated from bacteria and archaea</td>
+    <td>BLAST+</td>
+    <td>https://isfinder.biotoul.fr/</td>
+  </tr>
+  <tr>
+    <td>SecReT6 v3</td>
+    <td>Type VI secretion system (T6SS)</td>
+    <td>BLAST+</td>
+    <td>https://bioinfo-mml.sjtu.edu.cn/SecReT6/</td>
+  </tr>
+  <tr>
+    <td colspan="4">Metabolism and elemental cycling database</td>
+  </tr>
+  <tr>
+    <td>CAZY</td>
+    <td>Carbohydrate-active enZYmes database</td>
+    <td>BLAST+, HMMER, dbCAN3</td>
+    <td>http://www.cazy.org/</td>
+  </tr>
+  <tr>
+    <td>CYPED</td>
+    <td>Cytochrome P450 engineering database</td>
+    <td>BLAST+</td>
+    <td>http://www.cyped.uni-stuttgart.de</td>
+  </tr>
+  <tr>
+    <td>TCDB</td>
+    <td>Transporter classification (TC) system database</td>
+    <td>BLAST+</td>
+    <td>https://www.tcdb.org/</td>
+  </tr>
+  <tr>
+    <td>antiSMASH</td>
+    <td>Secondary metabolite biosynthetic gene clusters (BGCs)</td>
+    <td>antiSMASH</td>
+    <td>https://antismash.secondarymetabolites.org/</td>
+  </tr>
+  <tr>
+    <td>Bigspace</td>
+    <td>Diversity of biosynthetic gene clusters</td>
+    <td>Bigspace</td>
+    <td>https://bigscape-corason.secondarymetabolites.org/</td>
+  </tr>
+  <tr>
+    <td>NCycDB</td>
+    <td>Nitrogen cycle gene (sub) families</td>
+    <td>BLAST+, Diamond</td>
+    <td>https://github.com/qichao1984/Ncyc</td>
+  </tr>
+  <tr>
+    <td>SCycDB</td>
+    <td>Sulfur cycling gene and Pathways</td>
+    <td>Diamond</td>
+    <td>https://github.com/qichao1984/SCycDB</td>
+  </tr>
+  <td>MCycDB</td>
+    <td>Methane cycling genes</td>
+    <td>Diamond</td>
+    <td>https://github.com/qichao1984/MCycDB</td>
+  </tr>
+  <tr>
+    <td>PCyCDB</td>
+    <td>Phosphorus cycling genes</td>
+    <td>Diamond</td>
+    <td>https://github.com/ZengJiaxiong/Phosphorus-cycling-database</td>
+  </tr>
+  <tr>
+    <td>VB12Path</td>
+    <td>Cobalamin synthesis pathways</td>
+    <td>Diamond</td>
+    <td>https://github.com/qichao1984/VB12Path</td>
+  </tr>
+  <tr>
+    <td colspan="4">Taxonomic databases</td>
+  </tr>
+  <tr>
+    <td>IMG/VR v4</td>
+    <td>Integrated microbial genome/virus system</td>
+    <td>BLAST+</td>
+    <td>https://img.jgi.doe.gov/vr</td>
+  </tr>
+  <tr>
+    <td>GTDB</td>
+    <td>Genome taxonomy database</td>
+    <td>GTDB-tk</td>
+    <td>https://gtdb.ecogenomic.org/</td>
+  </tr>
+  <tr>
+    <td>VirSorter2-DB</td>
+    <td>Diverse DNA and RNA virus genomes</td>
+    <td>VirSorter2</td>
+    <td>https://github.com/jiarong/VirSorter2</td>
+  </tr>
+  <tr>
+    <td>CheckV-DB</td>
+    <td>Complete viral genomes from metagenomes</td>
+    <td>CheckV</td>
+    <td>https://bitbucket.org/berkeleylab/CheckV</td>
+  </tr>
+  <tr>
+    <td>Kraken2_DB</td>
+    <td>Standard or custom RefSeq databases for taxonomic classification</td>
+    <td>Kraken2, Krakentools</td>
+    <td>https://benlangmead.github.io/aws-indexes/k2</td>
+  </tr>
+  <tr>
+    <td>Kaiju_DB</td>
+    <td>Taxonomic classification database includes nr, RefSeq, progenomes, plasmid, and rvdb</td>
+    <td>Kaiju</td>
+    <td>https://bioinformatics-centre.github.io/kaiju/</td>
+  </tr>
+</table>
+
+
+## Table 3
+Table 3. The application of visualize R package in long-reads metagenomics studies  
+| Application                             | Packages                                                                                                                                                        |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Metagenome and microbiome analysis and visualization | MetagenomeSeq, EasyAmplicon, EasyMetagenome, EasyMicrobiome, MicrobiomeStat, microbiome, EasyMicroPlot, Metacoder, Phyloseq                                      |
+| Data visualization & plotting           | compositions, bpca, igraph, rtk, gbtools, Corrplot, clusterProfiler, ImageGP                                                                                     |
+| Multi-omics                             | ivTerm, mixOmics                                                                                                                                                 |
+| Data processing & statistical analysis  | ggplot2, ggthemes, ggtree, ggmsa, networkD3, circlize, ggvenn, ggmap, ggpubr, clusterCrit, treemap, UpSetR, Pheatmap, cowplot                                    |
+
+
+# Supplementary Information
+Table S1. The Software in Long-Read Metagenomics Studies.  
+Table S2. The Description of Visualize R package in Long-Reads Metagenomics Studies.  
+File S1. Installation and usage of the noteworthy metagenomic analysis software.  
