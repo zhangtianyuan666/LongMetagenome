@@ -171,30 +171,95 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>MetaProb2</td>
     <td>Long reads binner with reads assembly, probabilistic k-mers, and graph modularity algorithm</td>
     <td>https://github.com/frankandreace/metaprob2</td>
- <tr>
-    <td></td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
- <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3</td>
+<tr>
+      <td>MUFFIN</td>
+      <td>Hybrid assembly and binning workflow for metagenomics, transcriptomics and pathway analysis</td>
+      <td>https://github.com/RVanDamme/MUFFIN</td>
+    </tr>
+    <tr>
+      <td>BASALT</td>
+      <td>Binning across a series of assembly’s toolkit for short and long read</td>
+      <td>https://github.com/EMBL-PKU/BASALT</td>
+    </tr>
+    <tr>
+      <td>HiCBin</td>
+      <td>Binning using Hi-C contact maps</td>
+      <td>https://github.com/dyxstat/HiCBin</td>
+    </tr>
+    <tr>
+      <td>MetaCC</td>
+      <td>Binning long-read and short-read metagenomic Hi-C data</td>
+      <td>https://github.com/dyxstat/MetaCC</td>
+    </tr>
+    <tr>
+      <td>Nanodisco</td>
+      <td>Discovering multiple types of DNA methylation, and binning using nanopore sequencing</td>
+      <td>https://github.com/fanglab/nanodisco</td>
+    </tr>
+    <tr>
+      <td>dRep</td>
+      <td>Rapidly comparing large numbers of genomes and choosing the best representative genome</td>
+      <td>https://github.com/MrOlm/drep</td>
+    </tr>
+    <tr>
+      <td>GTDB-tk</td>
+      <td>Taxonomic classifications for bacterial and archaeal genomes</td>
+      <td>https://ecogenomics.github.io/GTDBTk/</td>
+    </tr>
+    <tr>
+      <td>Bugsplit</td>
+      <td>Highly accurate taxonomic binning of metagenomic assemblies</td>
+      <td>https://bugseq.com/academic</td>
+    </tr>
+<tr>
+      <td>CheckM2</td>
+      <td>Predict the completeness and contamination of genomic bins using machine learning</td>
+      <td>https://github.com/chklovski/CheckM2</td>
+    </tr>
+    <tr>
+      <td>CoverM</td>
+      <td>Calculates coverage of genomes/MAGs</td>
+      <td>https://github.com/wwood/CoverM</td>
+    </tr>
+    <tr>
+      <td>metaQUAST</td>
+      <td>Evaluation of metagenome assemblies</td>
+      <td>http://bioinf.spbau.ru/metaquast</td>
+    </tr>
+    <tr>
+      <td>MetaCortex</td>
+      <td>Capturing variations in metagenomic assembly graphs</td>
+      <td>https://github.com/SR-Martin/metacortex</td>
+    </tr>
+    <tr>
+      <td>StrainPhlAn</td>
+      <td>Profiling microbes from known species with strain level resolution and providing comparative and phylogenetic</td>
+      <td>http://segatalab.cibio.unitn.it/tools/strainphlan/</td>
+    </tr>
+    <tr>
+      <td>MAGphase</td>
+      <td>Phasing for metagenomics using PacBio long reads</td>
+      <td>https://github.com/Magdoll/MagPhase</td>
+    </tr>
+    <tr>
+      <td>metaSVs</td>
+      <td>Combining long and short reads for analysis and visualization of structural variants in metagenomes</td>
+      <td>https://github.com/Wlab518/SV_procedure</td>
+    </tr>
+   <tr>
+    <td colspan="3">Gene prediction and functional analysis</td>
+   <tr>
+    <tr>
+      <td>Prokka</td>
+      <td>Rapid prokaryotic genome annotation</td>
+      <td>https://github.com/tseemann/prokka</td>
+    </tr>
+    <tr>
+      <td>HMMER</td>
+      <td>Searching sequence databases for sequence homologs by hidden Markov models</td>
+      <td>http://hmmer.org/</td>
+    </tr>
+	
  <tr>
     <td>Row 3, Cell 1</td>
     <td>Row 3, Cell 2</td>
@@ -204,57 +269,3 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
 	
 
 
-		
-		
-
-	Hybrid assembly and binning workflow for metagenomics, transcriptomics and pathway analysis	https://github.com/RVanDamme/MUFFIN
-
-BASALT	Binning across a series of assembly’s toolkit for short and long read	https://github.com/EMBL-PKU/BASALT
-
-HiCBin	Binning using Hi-C contact maps	https://github.com/dyxstat/HiCBin
-
-MetaCC	Binning long-read and short-read metagenomic Hi-C data	https://github.com/dyxstat/MetaCC 
-
-Nanodisco	Discovering multiple types of DNA methylation, and binning using nanopore sequencing	https://github.com/fanglab/nanodisco
-
-dRep	Rapidly comparing large numbers of genomes and choosing the best representative genome	https://github.com/MrOlm/drep
-
-GTDB-tk	Taxonomic classifications for bacterial and archaeal genomes	https://ecogenomics.github.io/GTDBTk/
-
-Bugsplit	Highly accurate taxonomic binning of metagenomic assemblies	https://bugseq.com/academic
-
-CheckM2	Predict the completeness and contamination of genomic bins using machine learning	https://github.com/chklovski/CheckM2
-
-CoverM	Calculates coverage of genomes/MAGs	https://github.com/wwood/CoverM
-
-metaQUAST	Evaluation of metagenome assemblies	http://bioinf.spbau.ru/metaquast
-
-MetaCortex	Capturing variations in metagenomic assembly graphs	https://github.com/SR-Martin/metacortex
-
-StrainPhlAn	Profiling microbes from known species with strain level resolution and providing comparative and phylogenetic	http://segatalab.cibio.unitn.it/tools/strainphlan/
-
-MAGphase	Phasing for metagenomics using PacBio long reads	https://github.com/Magdoll/MagPhase
-
-metaSVs	Combining long and short reads for analysis and visualization of structural variants in metagenomes	https://github.com/Wlab518/SV_procedure
-
-Gene prediction and functional analysis	
-Prokka	Rapid prokaryotic genome annotation	https://github.com/tseemann/prokka
-
-HMMER	Searching sequence databases for sequence homologs by hidden Markov models	http://hmmer.org/
-
-BLAST+	Basic Local Alignment Search Tool finds regions of similarity between biological sequences.	https://blast.ncbi.nlm.nih.gov/Blast.cgi
-
-eggNOG-mapper	Functional annotation of novel sequences from the eggNOG database	http://eggnog-mapper.embl.de/
-
-antiSMASH	Search a genome sequence for secondary metabolite biosynthetic gene clusters (BGCs)	https://antismash.secondarymetabolites.org/
-
-BiG-SCAPE	Constructs sequence similarity networks of BGCs and groups them into cluster families	https://bigscape-corason.secondarymetabolites.org/
-
-PlasFlow	Prediction of plasmid sequences in metagenomic contigs	https://github.com/smaegol/PlasFlow
-
-PhiSpy	Finding prophages in bacterial genomes that combines similarity-and composition-based strategies	https://github.com/linsalrob/PhiSpy
-Salmon	Highly-accurate, transcript-level quantification tools suitable metagenome	https://github.com/COMBINE-lab/salmon
-
-Cd-hit	Clusters and compares protein or nucleotide sequences	https://github.com/weizhongli/cdhit
-
-Table 1. The noteworthy software in long-read metagenomics studies.
