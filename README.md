@@ -41,7 +41,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>https://github.com/nanoporetech/dorado</td>
   <tr>
     <td>PBSIM3</td>
-    <td>A simulator for all types of PacBio and ONT long reads</td>
+    <td>A simulator for all types of PacBio and ONT long-reads</td>
     <td>https://github.com/yukiteruono/pbsim3</td>
   <tr>
     <td>Porechop</td>
@@ -53,7 +53,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>https://github.com/wdecoster/nanofilt</td>
   <tr>
     <td>LongQC</td>
-    <td>Quality control of the PacBio and ONT long reads</td>
+    <td>Quality control of the PacBio and ONT long-reads</td>
     <td>https://github.com/yfukasawa/LongQC</td>
    <tr>
     <td>Minimap2</td>
@@ -79,7 +79,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>https://ccb.jhu.edu/software/bracken/</td>
    <tr>
     <td>BugSeq</td>
-    <td>Alignment and lower common ancestor (LCA) algorithm, highly accurate cloud platform for long-read metagenomic analyses</td>
+    <td>Alignment and lower common ancestor (LCA) algorithm, cloud platform for long-read metagenome</td>
     <td>https://bugseq.com/free</td>
    <tr>
     <td>Metamaps</td>
@@ -91,7 +91,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>http://ab.inf.uni-tuebingen.de/software/downloads/megan-lr</td>
   <tr>
     <td>DESAMBA</td>
-    <td>De Bruijn graph-based Sparse Approximate Match Block Analyzer (deSAMBA), a tailored long-read classification approach</td>
+    <td>De Bruijn graph-based Sparse Approximate Match Block Analyzer (deSAMBA), a tailored long-read classifier</td>
     <td>https://github.com/hitbc/deSAMBA</td>
   <tr>
     <td>Diamond</td>
@@ -100,7 +100,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
    <tr>
     <td colspan="3">Metagenomic assemble, polish, and binning</td>
    <tr>
-    <td>Hifiasm-meta</td>
+    <td>HiFiasm-meta</td>
     <td>Haplotype-resolved assembler for accurate HiFi reads</td>
     <td>https://github.com/lh3/hifiasm-meta</td>
    <tr>
@@ -141,7 +141,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>https://github.com/nanoporetech/medaka</td>
  <tr>
     <td>Ratatosk</td>
-    <td>Hybrid error correction of long reads using colored de Bruijn graphs</td>
+    <td>Hybrid error correction of long-reads using colored de Bruijn graphs</td>
     <td>https://github.com/DecodeGenetics/Ratatosk</td>
  <tr>
     <td>MetaBAT2</td>
@@ -153,23 +153,23 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>https://github.com/bxlab/metaWRAP</td>
  <tr>
     <td>metaBCC-LR</td>
-    <td>Long reads binner with K-mer, composition, and density-based clustering</td>
+    <td>Long-reads binner with K-mer, composition, and density-based clustering</td>
     <td>https://github.com/anuradhawick/MetaBCC-LR</td>
  <tr>
     <td>LRBinner</td>
-    <td>Long reads binner with K-mer and latent representation</td>
+    <td>Long-reads binner with K-mer and latent representation</td>
     <td>https://github.com/anuradhawick/LRBinner</td>
  <tr>
     <td>GraphMB</td>
-    <td>Long reads binner with graph machine learning algorithms and the assembly graph generated</td>
+    <td>Long-reads binner with graph machine learning algorithms and the assembly graph generated</td>
     <td>https://github.com/MicrobialDarkMatter/GraphMB</td>
  <tr>
     <td>MetaCoAG</td>
-    <td>Short and long reads binner via composition, coverage and assembly graphs</td>
+    <td>Short and long-reads binner via composition, coverage and assembly graphs</td>
     <td>https://github.com/metagentools/MetaCoAG</td>
  <tr>
     <td>MetaProb2</td>
-    <td>Long reads binner with reads assembly, probabilistic k-mers, and graph modularity algorithm</td>
+    <td>Long-reads binner with reads assembly, probabilistic k-mers, and graph modularity algorithm</td>
     <td>https://github.com/frankandreace/metaprob2</td>
 <tr>
       <td>MUFFIN</td>
@@ -178,7 +178,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     </tr>
     <tr>
       <td>BASALT</td>
-      <td>Binning across a series of assembly’s toolkit for short and long read</td>
+      <td>Binning across a series of assembly’s toolkit for short and long-read</td>
       <td>https://github.com/EMBL-PKU/BASALT</td>
     </tr>
     <tr>
@@ -238,7 +238,7 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     </tr>
     <tr>
       <td>MAGphase</td>
-      <td>Phasing for metagenomics using PacBio long reads</td>
+      <td>Phasing for metagenomics using PacBio long-reads</td>
       <td>https://github.com/Magdoll/MagPhase</td>
     </tr>
     <tr>
@@ -519,13 +519,13 @@ Table 2. The application of databases in long-read metagenomic studies
     <td>https://bitbucket.org/berkeleylab/CheckV</td>
   </tr>
   <tr>
-    <td>Kraken2_DB</td>
+    <td>Kraken2-DB</td>
     <td>Standard or custom RefSeq databases for taxonomic classification</td>
     <td>Kraken2, Krakentools</td>
     <td>https://benlangmead.github.io/aws-indexes/k2</td>
   </tr>
   <tr>
-    <td>Kaiju_DB</td>
+    <td>Kaiju-DB</td>
     <td>Taxonomic classification database includes nr, RefSeq, progenomes, plasmid, and rvdb</td>
     <td>Kaiju</td>
     <td>https://bioinformatics-centre.github.io/kaiju/</td>
