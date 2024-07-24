@@ -4,7 +4,9 @@ Update: 20240724
 
 # Data Quality Control, simulator, and remove host
 ## SMRTlink 
+
 <font color=red>Designed for Pacbio data</font>
+
 Recommend using the official source code installation, it is easy to install 
 
 **Install**
