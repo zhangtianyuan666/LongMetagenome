@@ -6,6 +6,7 @@ Update: 20240724
 ## SMRTlink 
 <span style="color: red;">This text is red.</span>
 <font color=red>Designed for Pacbio data</font>
+<div class="red-text">This text is red.</div>
 
 Recommend using the official source code installation, it is easy to install 
 
