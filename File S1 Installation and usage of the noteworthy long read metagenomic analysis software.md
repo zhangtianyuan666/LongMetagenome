@@ -1,6 +1,6 @@
 # File S1 Installation and usage of the noteworthy metagenomic analysis software
 
-Update: 20240514
+Update: 20240724
 
 # Data Quality Control, simulator, and remove host
 ## SMRTlink
