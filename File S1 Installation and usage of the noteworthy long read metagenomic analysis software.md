@@ -307,6 +307,60 @@ diamond makedb --in test.fasta -d db_name
 diamond blastx -d db_name -q query.fasta -o output.txt
 ```
 
+## metaBCC-LR
+It is so difficult to install due to environmental conflicts!! Gcc version 9.4.0 needs to be installed on Ubuntu 20.04 LTS
+
+**Install**
+```
+apt install libpthread-stubs0-dev
+conda create -n metabcc python=3.8.19
+ conda activate metabcc
+pip install numpy scipy kneed seaborn h5py tabulate umap-learn song-vis
+```
+**Usage**
+```
+python mbcclr --resume -r test_data/data/reads.fasta -g test_data/data/ids.txt -o test_output -e umap -c 25000 -bs 10 -bc 10 -k 4
+```
+
+## LRBinner
+Recommend using Docker/Singularity to run, followed by Conda installation
+
+**Install**
+```
+# docker file
+docker pull mantonius/lrbinner:v2.1
+# source conda 
+conda create -n lrbinner -y python=3.10 numpy scipy seaborn h5py hdbscan gcc openmp tqdm biopython fraggenescan hmmer tabulate pytorch pytorch-cuda=11.7 -c pytorch -c nvidia -c bioconda
+# git clone 
+git clone https://github.com/anuradhawick/LRBinner.git
+# Build the binaries
+sh build.sh
+```
+**Usage**
+```
+python lrbinners.py reads -r reads.fasta -bc 10 -bs 32 -o lrb --resume --cuda -mbs 5000 --ae-dims 4 --ae-epochs 200 -bit 0 -t 32
+```
+## MetaProb2
+Recommend using Conda installation; MetaProb2 needs minimap2, Miniasm and MetaProb;
+
+**Install**
+```
+# 01 Singularity
+https://depot.galaxyproject.org/singularity/metaprob%3A2--boost1.61_1
+# 02-1. Install minimap2, Miniasm
+conda install minimap2;
+conda install miniasm;
+# 02-2. Source code install metaprob2
+git clone https://github.com/frankandreace/metaprob2.git  #Download this repo
+# 03 docker
+docker pull flowcraft/metaprob:2-1
+```
+**Usage**
+```
+METAPROB2.sh [-s NUM SPECIES] [-k KMER-SIZE] [-w WINDOW-SIZE] [-m MAX-CHAINED-UTG-LENGTH] [-o OPT-PARAMETER-MODULARITY] [-l SKIP-READS-LEFT-OUT] [-r MIN-LENGTH MAX-LENGTH] <input_file> <output_folder> <name>
+```
+
+
 
 # Metagenome assemble, polish, and Binning
 ## Hifiasm-meta
@@ -607,39 +661,6 @@ metaWRAP annotate_bins -o FUNCT_ANNOT \
 -b BIN_REASSEMBLY/reassembled_bins/
 ```
 
-## metaBCC-LR
-It is so difficult to install due to environmental conflicts!! Gcc version 9.4.0 needs to be installed on Ubuntu 20.04 LTS
-
-**Install**
-```
-apt install libpthread-stubs0-dev
-conda create -n metabcc python=3.8.19
- conda activate metabcc
-pip install numpy scipy kneed seaborn h5py tabulate umap-learn song-vis
-```
-**Usage**
-```
-python mbcclr --resume -r test_data/data/reads.fasta -g test_data/data/ids.txt -o test_output -e umap -c 25000 -bs 10 -bc 10 -k 4
-```
-
-## LRBinner
-Recommend using Docker/Singularity to run, followed by Conda installation
-
-**Install**
-```
-# docker file
-docker pull mantonius/lrbinner:v2.1
-# source conda 
-conda create -n lrbinner -y python=3.10 numpy scipy seaborn h5py hdbscan gcc openmp tqdm biopython fraggenescan hmmer tabulate pytorch pytorch-cuda=11.7 -c pytorch -c nvidia -c bioconda
-# git clone 
-git clone https://github.com/anuradhawick/LRBinner.git
-# Build the binaries
-sh build.sh
-```
-**Usage**
-```
-python lrbinners.py reads -r reads.fasta -bc 10 -bs 32 -o lrb --resume --cuda -mbs 5000 --ae-dims 4 --ae-epochs 200 -bit 0 -t 32
-```
 
 
 
@@ -679,25 +700,6 @@ metacoag --assembler flye --graph /path/to/assembly_graph.gfa --contigs /path/to
 ```
 
 
-## MetaProb2
-Recommend using Conda installation; MetaProb2 needs minimap2, Miniasm and MetaProb;
-
-**Install**
-```
-# 01 Singularity
-https://depot.galaxyproject.org/singularity/metaprob%3A2--boost1.61_1
-# 02-1. Install minimap2, Miniasm
-conda install minimap2;
-conda install miniasm;
-# 02-2. Source code install metaprob2
-git clone https://github.com/frankandreace/metaprob2.git  #Download this repo
-# 03 docker
-docker pull flowcraft/metaprob:2-1
-```
-**Usage**
-```
-METAPROB2.sh [-s NUM SPECIES] [-k KMER-SIZE] [-w WINDOW-SIZE] [-m MAX-CHAINED-UTG-LENGTH] [-o OPT-PARAMETER-MODULARITY] [-l SKIP-READS-LEFT-OUT] [-r MIN-LENGTH MAX-LENGTH] <input_file> <output_folder> <name>
-```
 
 ## MUFFIN
 Recommend using Conda installation, This is a nextflow pipeline.
