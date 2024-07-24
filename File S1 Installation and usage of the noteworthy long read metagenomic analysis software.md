@@ -4,8 +4,14 @@ Update: 20240724
 
 # Data Quality Control, simulator, and remove host
 ## SMRTlink 
-<span style="color: red;">This text is red.</span>
-<font color=red>Designed for Pacbio data</font>
+<span style="color: blue;">This text is blue.</span>
+
+![example badge](https://img.shields.io/badge/Status-Active-green)
+
+![Colored Text](https://via.placeholder.com/150/FF0000/FFFFFF?text=Red+Text)
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
 <div class="red-text">This text is red.</div>
 
 Recommend using the official source code installation, it is easy to install 
