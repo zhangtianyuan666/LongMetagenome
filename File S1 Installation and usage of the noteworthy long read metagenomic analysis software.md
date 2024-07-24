@@ -35,7 +35,7 @@ bam2fastq -o out.fq.gz -c 9 input.ccs.bam
 
 
 
-## Dorado
+## Dorado* 
 Recommend using the official source code installation, it is easy to install
 
 **Install**
@@ -49,7 +49,7 @@ $dorado-0.5.3-linux-x64/bin/dorado basecaller -r --batchsize 3072 -x "cuda:all" 
 ```
 
 
-## PBSIM3
+## PBSIM3* 
 Recommend using the official GitHub installation, it is easy to install
 
 
@@ -68,7 +68,7 @@ $pbsim3/src/pbsim --strategy wgs  --method sample  --sample sample/sample.fastq 
 
 
 
-## Porechop
+## Porechop* 
 **Install**
 The following three installation methods are acceptable,it is recommended to install using Conda first.
 ```
@@ -87,7 +87,7 @@ porechop -i test.fq.gz \  # Input fastq
 -t 16 \ # threads
 ```
 
-## NanoFilt
+## NanoFilt* 
 Recommend using the conda to install
 
 **Install**
@@ -101,7 +101,7 @@ gunzip -c reads.fastq.gz | NanoFilt -q 10 | gzip > highQuality-reads.fastq.gz
 ```
 
 
-## LongQC
+## LongQC* 
 Recommend using the conda and docker to install
 
 **install**
@@ -118,7 +118,7 @@ https://depot.galaxyproject.org/singularity/longqc%3A1.2.0c--hdfd78af_0
 python longQC.py sampleqc -x ont-ligation -o out_dir input_reads.fq --ncpu 30
 ```
 
-## Minimap2
+## Minimap2* 
 Recommend using the conda to install
 
 **Install**
@@ -137,7 +137,7 @@ minimap2 -ax map-ont -t 30 ref.fa   ont_read.fq > map.sam
 minimap2 -ax map-pb -t 30 ref.fa   pb_read.fq > map.sam
 ```
 
-## Winnowmap2
+## Winnowmap2* 
 Recommend using the conda to install
 
 **Install**
@@ -156,7 +156,7 @@ meryl print greater-than distinct=0.9998 merylDB > repetitive_k15.txt
 winnowmap -W repetitive_k15.txt -ax map-ont ref.fa ont.fq.gz > output.sam
 ```
 
-## LAST
+## LAST* 
 Recommend using the conda to install
 
 **Install**
@@ -170,7 +170,7 @@ lastal -s 2 -T 0 -Q 0 -a 1 -P $N_threads -f BlastTab lastindex $Input_fa > blast
 ```
 
 
-# Taxonomy Profile and binning
+# Taxonomy Profile and reads binning
 ## Kraken2
 Recommend using the conda to install
 
@@ -204,7 +204,7 @@ https://depot.galaxyproject.org/singularity/bracken%3A2.9--py39h1f90b4d_0
 ```
 bracken -d ${KRAKEN_DB} -i ${SAMPLE}.kreport -o ${SAMPLE}.bracken -r ${READ_LEN} -l ${LEVEL} -t ${THRESHOLD}
 ```
-## Bugsplit/Bugseq
+## Bugsplit/Bugseq* 
 Recommend using online analysis
 
 **Online analysis**
@@ -223,7 +223,7 @@ git clone https://github.com/awilson0/bugseq-pipeline.git
 nextflow main.nf --fastq in.fq --outdir output_dir
 ```
 
-## Metamaps
+## Metamaps* 
 Recommend using the conda to install
 
 **Install**
@@ -250,7 +250,7 @@ metamaps classify --DB /home/benagen/Biodatabase/databases/miniSeq+H/ --mappings
 ```
 
 
-## MEGAN-LR
+## MEGAN-LR* 
 Recommend using the Windows version
 
 **Install**
@@ -267,7 +267,7 @@ Meganize the DAA file either using the Meganizer command-line tool or interactiv
 
 
 
-## DESAMBA
+## DESAMBA* 
 Recommend using the official GitHub installation, it is easy to install
 
 **Install**
@@ -310,7 +310,7 @@ diamond makedb --in test.fasta -d db_name
 diamond blastx -d db_name -q query.fasta -o output.txt
 ```
 
-## metaBCC-LR
+## metaBCC-LR* 
 It is so difficult to install due to environmental conflicts!! Gcc version 9.4.0 needs to be installed on Ubuntu 20.04 LTS
 
 **Install**
@@ -325,7 +325,7 @@ pip install numpy scipy kneed seaborn h5py tabulate umap-learn song-vis
 python mbcclr --resume -r test_data/data/reads.fasta -g test_data/data/ids.txt -o test_output -e umap -c 25000 -bs 10 -bc 10 -k 4
 ```
 
-## LRBinner
+## LRBinner* 
 Recommend using Docker/Singularity to run, followed by Conda installation
 
 **Install**
@@ -343,7 +343,7 @@ sh build.sh
 ```
 python lrbinners.py reads -r reads.fasta -bc 10 -bs 32 -o lrb --resume --cuda -mbs 5000 --ae-dims 4 --ae-epochs 200 -bit 0 -t 32
 ```
-## MetaProb2
+## MetaProb2* 
 Recommend using Conda installation; MetaProb2 needs minimap2, Miniasm and MetaProb;
 
 **Install**
@@ -366,7 +366,7 @@ METAPROB2.sh [-s NUM SPECIES] [-k KMER-SIZE] [-w WINDOW-SIZE] [-m MAX-CHAINED-UT
 
 
 # Metagenome assemble, polish, and Binning
-## Hifiasm-meta
+## Hifiasm-meta* 
 Recommend using the official GitHub installation , it is easy to install
 
 **Install**
@@ -389,7 +389,7 @@ hifiasm_meta -t32 -S -o asm reads.fq.gz 2>asm.log
 awk '/^S/{print ">"$2;print $3}' prefix.p_ctg.gfa > hifiasm.fa
 ```
 
-## metaFlye
+## metaFlye* 
 Recommend using  conda installation
 **Install**
 ```
@@ -408,7 +408,7 @@ ut-dir flye_fq_20200101 --threads 40 --iterations 4 --meta
 
 
 
-## Lathe
+## Lathe* 
 Recommend using conda installation
 
 **Install**
@@ -424,7 +424,7 @@ snakemake --use-singularity --singularity-args '--bind /labs/,/scg/,/home/ ' -s 
 --configfile path/to/modified_config.yaml --restart-times 0 --keep-going --latency-wait 30
 
 
-## metaMDBG
+## metaMDBG* 
 Recommend using conda installation
 
 **Install**
@@ -441,7 +441,7 @@ https://depot.galaxyproject.org/singularity/metamdbg%3A0.3--hdcf5f25_0
 metaMDBG asm ./path/to/assemblyDir reads.fastq.gz -t 4
 ```
 
-## STRONG
+## STRONG* 
 Recommend using  conda installation
 
 **Install**
@@ -467,7 +467,7 @@ conda env config vars set GTDBTK_DATA_PATH="/path/to/target/db"
 ```
 
 
-## Strainberry
+## Strainberry* 
 Recommend using conda or docker images  
 
 **Install**
@@ -485,7 +485,7 @@ strainberry -r assembly.fasta -b alignment.sorted.bam -o sberry_out -c 4
 ```
 
 
-## OPERA-MS
+## OPERA-MS* 
 Recommend using docker images 
 
 **Install**
@@ -526,7 +526,7 @@ docker pull staphb/pilon:1.24
 java -Xmn100G -Xms100G -Xmx250G -jar pilon-1.24.jar --genome Test.contigs.fasta --frags alignments.bam --fix all --outdir ./
 ```
 
-## Racon
+## Racon* 
 Recommend using Docker/Singularity to run, followed by Conda installation
 
 **Install**
@@ -546,7 +546,7 @@ minimap2 -ax map-pb assembly.fasta reads.fastq > reads.paf
 ```
 
 
-## Medaka
+## Medaka* 
 Recommend using Docker/Singularity to run, followed by Conda installation
 
 **Install**
@@ -564,7 +564,7 @@ medaka_consensus  -i NB01.spoa.fq -d NB01_trim.fastq -o NB01_spoa_medaka -t 4 -m
 ```
 
 
-## Ratatosk
+## Ratatosk* 
 We recommend using conda and Docker/Singularity installation and operation
 
 **Install**
@@ -665,9 +665,7 @@ metaWRAP annotate_bins -o FUNCT_ANNOT \
 ```
 
 
-
-
-## GraphMB
+## GraphMB* 
 Recommend using Docker/Singularity to run
 **Install**
 ```
@@ -684,7 +682,7 @@ graphmb --assembly data/strong100/ --outdir results/strong100/ --assembly_name e
 ```
 
 
-## MetaCoAG
+## MetaCoAG* 
 Recommend using Docker/Singularity to run, followed by Conda installation
 
 **Install**
@@ -704,7 +702,7 @@ metacoag --assembler flye --graph /path/to/assembly_graph.gfa --contigs /path/to
 
 
 
-## MUFFIN
+## MUFFIN* 
 Recommend using Conda installation, This is a nextflow pipeline.
 
 **Install**
@@ -726,7 +724,7 @@ nextflow run main.nf --ont nanopore/ --illumina illumina/ --assembler metaflye -
 
 
 
-## BASALT
+## BASALT* 
 Recommend using Docker/Singularity to run, followed by Conda installation(difficult to install)
 
 **Install**
@@ -789,7 +787,7 @@ hicbin.py pipeline -e HpaII BN2WC.contigs.fa BN2WC1.sort.bam tax.txt BN2WC1.cove
 ```
 
 
-## MetaCC
+## MetaCC* 
 We recommend using conda to install MetaCC
 
 ***Install**
@@ -878,7 +876,7 @@ singularity run https://depot.galaxyproject.org/singularity/gtdbtk:2.3.2--pyhdfd
 gtdbtk  classify_wf --genome_dir ./ --out_dir classify_wf --extension fa --prefix bin --cpu 40
 ```
 
-## Bugsplit/Bugseq
+## Bugsplit/Bugseq* 
 Recommend using online analysis
 
 **Online analysis**
@@ -1000,7 +998,7 @@ strainphlan -s consensus_markers/*.pkl \  # SAMPLES
 
 
 
-## MAGphase
+## MAGphase* 
 Recommend using the official GitHub installation, it is easy to install
 
 **Install**
@@ -1019,7 +1017,7 @@ mag_phaser.py -a all_contigs.fasta -b align.sorted.bam -g gene.bed --bhFDR 0.01 
 ```
 
 
-## metaSVs
+## metaSVs* 
 Recommend using docker run
 
 **Install**
