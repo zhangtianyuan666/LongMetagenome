@@ -3,7 +3,7 @@
 Update: 20240724
 
 # Data Quality Control, simulator, and remove host
-## SMRTlink
+## SMRTlink `#f03c15`
 Recommend using the official source code installation, it is easy to install
 
 **Install**
@@ -43,7 +43,9 @@ Recommend using the official source code installation, it is easy to install
 wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-0.6.2-linux-x64.tar.gz;
 ```
 **Usage**
-$dorado-0.5.3-linux-x64/bin/dorado basecaller -r --batchsize 3072 -x "cuda:all"  ./model/dna_r10.4.1_e8.2_400bps_sup@v4.2.0  ./pod5 > basecalled.bam 
+```
+$dorado-0.5.3-linux-x64/bin/dorado basecaller -r --batchsize 3072 -x "cuda:all"  ./model/dna_r10.4.1_e8.2_400bps_sup@v4.2.0  ./pod5 > basecalled.bam
+```
 
 
 ## PBSIM3
