@@ -6,15 +6,15 @@
 
 
 ## Figure 1
-![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/f10a21ec-11c0-4e00-8c06-3298e17aed41)  
-Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2024+).   
+![Figure1_1](https://github.com/user-attachments/assets/7f91c817-4098-4b18-a254-bae05a56f9e3)
+  Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2024+).   
 
 ## Figure 2 
-![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/2ecc11e2-bc75-4969-95ab-75c6abf080a0)  
+![Figure2_1](https://github.com/user-attachments/assets/7e027cb2-efed-41c2-9565-be5150a894e2)
 Figure 2. Applying long-read metagenomics to analyze microbial community structure and functions.   
 
 ## Figure 3
-![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/a13f292c-83bb-4caa-afcc-4046fcf77352)  
+![Figure3_1](https://github.com/user-attachments/assets/c95e6112-ad2f-4c56-bd40-1dc3b7474c5d)
 Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.  
 
 ## Table 1 
