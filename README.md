@@ -1,13 +1,13 @@
 # Computational Tools and Resources for Metagenomics for Nanopore and PacBio sequencing
 
 适用于长读长（PacBio和ONT）宏基因组软件和资源汇总  
-更新时间(Update)：2024/6/2  
+更新时间(Update)：2024/7/28  
 项目主页(Project homepage):https://github.com/zhangtianyuan666/LongMetagenome/  
 
 
 ## Figure 1
 ![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/f10a21ec-11c0-4e00-8c06-3298e17aed41)  
-Figure 1. The origin and development of the long-read metagenome study. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2024+).   
+Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2024+).   
 
 ## Figure 2 
 ![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/2ecc11e2-bc75-4969-95ab-75c6abf080a0)  
@@ -15,7 +15,7 @@ Figure 2. Applying long-read metagenomics to analyze microbial community structu
 
 ## Figure 3
 ![image](https://github.com/zhangtianyuan666/LongMetagenome/assets/99855545/a13f292c-83bb-4caa-afcc-4046fcf77352)  
-Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.  
+Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.  
 
 ## Table 1 
 <table>
@@ -97,6 +97,18 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>Diamond</td>
     <td>Sequence aligner for protein and translated DNA searches, faster than BLAST</td>
     <td>https://github.com/bbuchfink/diamond</td>
+ <tr>
+    <td>metaBCC-LR</td>
+    <td>Long-reads binner with K-mer, composition, and density-based clustering</td>
+    <td>https://github.com/anuradhawick/MetaBCC-LR</td>
+ <tr>
+    <td>LRBinner</td>
+    <td>Long-reads binner with K-mer and latent representation</td>
+    <td>https://github.com/anuradhawick/LRBinner</td>
+ <tr>
+    <td>MetaProb2</td>
+    <td>Long-reads binner with reads assembly, probabilistic k-mers, and graph modularity algorithm</td>
+    <td>https://github.com/frankandreace/metaprob2</td>
    <tr>
     <td colspan="3">Metagenomic assemble, polish, and binning</td>
    <tr>
@@ -152,14 +164,6 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>Similarity-based binner with ensemble learning, integrated MetaBAT2, MaxBin2 and Concoct</td>
     <td>https://github.com/bxlab/metaWRAP</td>
  <tr>
-    <td>metaBCC-LR</td>
-    <td>Long-reads binner with K-mer, composition, and density-based clustering</td>
-    <td>https://github.com/anuradhawick/MetaBCC-LR</td>
- <tr>
-    <td>LRBinner</td>
-    <td>Long-reads binner with K-mer and latent representation</td>
-    <td>https://github.com/anuradhawick/LRBinner</td>
- <tr>
     <td>GraphMB</td>
     <td>Long-reads binner with graph machine learning algorithms and the assembly graph generated</td>
     <td>https://github.com/MicrobialDarkMatter/GraphMB</td>
@@ -167,10 +171,6 @@ Figure 3. Bioinformatics pipeline for analysis of long read metagenomic data.
     <td>MetaCoAG</td>
     <td>Short and long-reads binner via composition, coverage and assembly graphs</td>
     <td>https://github.com/metagentools/MetaCoAG</td>
- <tr>
-    <td>MetaProb2</td>
-    <td>Long-reads binner with reads assembly, probabilistic k-mers, and graph modularity algorithm</td>
-    <td>https://github.com/frankandreace/metaprob2</td>
 <tr>
       <td>MUFFIN</td>
       <td>Hybrid assembly and binning workflow for metagenomics, transcriptomics and pathway analysis</td>
