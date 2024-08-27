@@ -1,7 +1,7 @@
 # Computational Tools and Resources for Metagenomics for Nanopore and PacBio sequencing
 
 适用于长读长（PacBio和ONT）宏基因组软件和资源汇总  
-更新时间(Update)：2024/7/28  
+更新时间(Update)：2024/8/27
 项目主页(Project homepage):https://github.com/zhangtianyuan666/LongMetagenome/  
 
 
@@ -62,7 +62,7 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
    <tr>
     <td>Winnowmap2</td>
     <td>Long-read or genome alignment software based on Minimap2</td>
-    <td>https://gitlab.com/mcfrith/last</td>
+    <td>https://github.com/marbl/Winnowmap</td>
    <tr>
     <td>LAST</td>
     <td>Pair-wise genome alignments</td>
@@ -93,6 +93,10 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
     <td>DESAMBA</td>
     <td>De Bruijn graph-based Sparse Approximate Match Block Analyzer (deSAMBA), a tailored long-read classifier</td>
     <td>https://github.com/hitbc/deSAMBA</td>
+  <tr>
+    <td>Melon</td>
+    <td>metagenomic long-read-based taxonomic identification and quantification using marker genes</td>
+    <td>https://github.com/xinehc/melon</td>
   <tr>
     <td>Diamond</td>
     <td>Sequence aligner for protein and translated DNA searches, faster than BLAST</td>
