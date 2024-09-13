@@ -1,7 +1,7 @@
 # Computational Tools and Resources for Metagenomics for Nanopore and PacBio sequencing
 
 适用于长读长（PacBio和ONT）宏基因组软件和资源汇总  
-更新时间(Update)：2024/8/27
+更新时间(Update)：2024/9/14
 项目主页(Project homepage):https://github.com/zhangtianyuan666/LongMetagenome/  
 
 
