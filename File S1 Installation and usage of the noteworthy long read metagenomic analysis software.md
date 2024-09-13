@@ -1,7 +1,7 @@
 # File S1 Installation and usage of the noteworthy metagenomic analysis software
 Notice: The asterisk(*) indicates that the software is designed for long-read data
 
-Update: 20240724
+Update: 2024914
 
 # Data Quality Control, simulator, and remove host
 ## SMRTlink* 
@@ -286,6 +286,43 @@ bash ./build-index ./demo/viral-gs.fa ./demo_index
 ./bin/deSAMBA classify -t 4 ./demo_index ./demo/ERR1050068.fastq -o ./ERR1050068.sam
 #analysis
 ./bin/deSAMBA analysis ana_meta_base ./ERR1050068.sam ./demo/nodes.dmp
+```
+
+## Melon*
+Recommend using the official GitHub installation, it is easy to install
+
+**Install**
+```
+# source code install
+conda create -n melon -c conda-forge -c bioconda melon
+conda activate melon
+```
+
+**Usage**
+```
+#download database 
+## NCBI
+wget -qN --show-progress https://zenodo.org/records/12571302/files/database.tar.gz
+tar -zxvf database.tar.gz
+
+## GTDB
+# wget -qN --show-progress https://zenodo.org/records/12571554/files/database.tar.gz
+# tar -zxvf database.tar.gz
+
+
+#Index the files
+diamond makedb --in database/prot.fa --db database/prot --quiet
+ls database/nucl.*.fa | sort | xargs -P $cpu_count -I {} bash -c '
+    filename=${1%.fa*};
+    filename=${filename##*/};
+    minimap2 -x map-ont -d database/$filename.mmi ${1} 2> /dev/null;
+    echo "Indexed <database/$filename.fa>.";' - {}
+
+rm -rf database/*.fa
+
+
+#analysis
+melon example.fa.gz -d database -o .
 ```
 
 ## Diamond
