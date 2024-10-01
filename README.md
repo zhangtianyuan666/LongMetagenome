@@ -1,7 +1,7 @@
 # Computational Tools and Resources for Long-read Metagenomic Sequencing using Nanopore and PacBio
 
 适用于长读长（PacBio和ONT）宏基因组软件和资源汇总  
-更新时间(Update)：2024/9/14
+更新时间(Update)：2024/10/01
 项目主页(Project homepage):https://github.com/zhangtianyuan666/LongMetagenome/  
 
 
@@ -139,6 +139,10 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
     <td>Strainberry</td>
     <td>Automated strain separation of low-complexity metagenomes</td>
     <td>https://github.com/rvicedomini/strainberry</td>
+ <tr>
+    <td>Strainy</td>
+    <td>Phasing and assembly of strain haplotypes using long-read data</td>
+    <td>https://github.com/katerinakazantseva/strainy</td>
  <tr>
     <td>OPERA-MS</td>
     <td>Hybrid metagenomic assembler which combines short and long-read</td>
