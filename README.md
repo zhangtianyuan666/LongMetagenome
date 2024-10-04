@@ -140,10 +140,6 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
     <td>Automated strain separation of low-complexity metagenomes</td>
     <td>https://github.com/rvicedomini/strainberry</td>
  <tr>
-    <td>Strainy</td>
-    <td>Phasing and assembly of strain haplotypes using long-read data</td>
-    <td>https://github.com/katerinakazantseva/strainy</td>
- <tr>
     <td>OPERA-MS</td>
     <td>Hybrid metagenomic assembler which combines short and long-read</td>
     <td>https://github.com/CSB5/OPERA-MS</td>
@@ -249,6 +245,11 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
       <td>Phasing for metagenomics using PacBio long-reads</td>
       <td>https://github.com/Magdoll/MagPhase</td>
     </tr>
+	 <tr>
+    <td>Strainy</td>
+    <td>Phasing and assembly of strain haplotypes using long-read data</td>
+    <td>https://github.com/katerinakazantseva/strainy</td>
+	</tr>
     <tr>
       <td>metaSVs</td>
       <td>Combining long and short reads for analysis and visualization of structural variants in metagenomes</td>
