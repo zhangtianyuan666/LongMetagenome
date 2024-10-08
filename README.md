@@ -6,15 +6,15 @@
 
 
 ## Figure 1
-![Figure1_1](https://github.com/user-attachments/assets/350f9982-669f-4c2c-bcb5-fad8326fb24f)
+![Figure1_1](https://github.com/user-attachments/assets/6fa6641e-f25f-4cd6-8279-605f5546a907)
   Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2024+).   
 
 ## Figure 2 
-![Figure2_1](https://github.com/user-attachments/assets/7e027cb2-efed-41c2-9565-be5150a894e2)
+![Figure2_1](https://github.com/user-attachments/assets/bb704af8-e954-4cd5-a649-2bf890235b9c)
 Figure 2. Applying long-read metagenomics to analyze microbial community structure and functions.   
 
 ## Figure 3
-![Figure3_1](https://github.com/user-attachments/assets/c95e6112-ad2f-4c56-bd40-1dc3b7474c5d)
+![Figure3_1](https://github.com/user-attachments/assets/13cd3b05-a691-498c-ba89-54077f2395b7)
 Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.  
 
 ## Table 1 
