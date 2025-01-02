@@ -250,6 +250,11 @@ Figure 3. Bioinformatics pipeline for analysis of long-read metagenomic data.
     <td>Phasing and assembly of strain haplotypes using long-read data</td>
     <td>https://github.com/katerinakazantseva/strainy</td>
 	</tr>
+	 <tr>
+    <td>Floria</td>
+    <td>fast and accurate strain haplotyping in metagenomes</td>
+    <td>https://github.com/bluenote-1577/floria</td>
+	</tr>
     <tr>
       <td>metaSVs</td>
       <td>Combining long and short reads for analysis and visualization of structural variants in metagenomes</td>
