@@ -1,7 +1,7 @@
 # File S1 Installation and usage of the noteworthy metagenomic analysis software
 Notice: The asterisk(*) indicates that the software is designed for long-read data
 
-Update: 2024914
+Update: 20250325
 
 # Data Quality Control, simulator, and remove host
 ## SMRTlink* 
@@ -440,8 +440,7 @@ singularity run https://depot.galaxyproject.org/singularity/flye:2.9.3--py39hd65
 ```
 **Usage**
 ```
-flye --nano-raw no_Metazoa.pass.fq.gz --o
-ut-dir flye_fq_20200101 --threads 40 --iterations 4 --meta
+flye --nano-raw no_Metazoa.pass.fq.gz --out-dir flye_fq_20200101 --threads 40 --iterations 4 --meta
 ```
 
 
