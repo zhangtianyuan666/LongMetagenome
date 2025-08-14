@@ -6,8 +6,8 @@
 
 
 ## Figure 1
-[Figure1_revisedR2.pdf](https://github.com/user-attachments/files/21777139/Figure1_revisedR2.pdf)
-  Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2025+).   
+![Figure1_revisedR2_1](https://github.com/user-attachments/assets/b73ced5b-47bb-4538-ae77-dacee13f0341)
+Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2025+).   
 
 ## Figure 2 
 ![Figure2_1](https://github.com/user-attachments/assets/bb704af8-e954-4cd5-a649-2bf890235b9c)
