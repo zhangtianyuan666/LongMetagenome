@@ -1,12 +1,12 @@
 # Computational Tools and Resources for Long-read Metagenomic Sequencing using Nanopore and PacBio
 
 适用于长读长（PacBio和ONT）宏基因组软件和资源汇总  
-更新时间(Update)：2025/03/25
+更新时间(Update)：2025/08/15
 项目主页(Project homepage):https://github.com/zhangtianyuan666/LongMetagenome/  
 
 
 ## Figure 1
-![Figure1_revised_1](https://github.com/user-attachments/assets/18a71561-fb6e-4bd7-9bc1-c2edae779daf)
+[Figure1_revisedR2.pdf](https://github.com/user-attachments/files/21777139/Figure1_revisedR2.pdf)
   Figure 1. The origin and development of the long-read metagenome studys. Purple represents the origin stage of metagenomics, symbolizing the early beginnings and conception of the field (1991-2010). Green signifies the development of long-read metagenomics, indicating the period of advancement where longer DNA sequencing reads were introduced, enhancing the resolution and capabilities of metagenomic analysis (2011-2018).  Orange signifies the maturation and expansion phase of long-read metagenomics, highlighting a stage where this technology became more refined, widely adopted, and its applications broadened significantly (2019-2025+).   
 
 ## Figure 2 
